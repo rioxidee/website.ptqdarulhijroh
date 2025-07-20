@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pondok Pesantren Tahfidzul Qur'an</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="container-navbar">
+    <ul class="ul-navbar">
+      <li class="li-navbar"><a href="#profil">PROFIL PONDOK</a></li>
+      <li class="li-navbar"><a href="#menu">MENU</a></li>
+      <li class="li-navbar"><a href="#sejarah">SEJARAH PONDOK</a></li>
+      <li class="li-navbar"><a href="#kegiatan">KEGIATAN PONDOK</a></li>
+      <li class="li-navbar"><a href="pendaftaran">PENDAFTARAN</a></li>
+    </ul>
+    <div class="search-container">
+      <input type="text" class="search-box" placeholder="Cari..." />
+      <button class="search-button">🔍</button>
+    </div>
+  </nav>
+
+  <!-- Gambar Logo -->
+  <main class="container-content">
+    <img src="LOGO PNDOK.png" alt="Logo Pondok" class="img-content" />
+  </main>
+
+  <!-- Footer -->
+  <footer class="container-isi">
+    <h1 class="h1-pondok">PONDOK PESANTREN TAHFIDZUL QUR'AN</h1>
+    <h2 class="h2-subtitle">DARUL HIJROH</h2>
+  </footer>
+
+  <!-- Section Isi -->
+  <section id="profil" class="section-content">
+    <h2>Profil Pondok</h2>
+    <p>Pondok Pesantren Tahfidzul Qur'an berdiri sejak...</p>
+  </section>
+
+  <section id="menu" class="section-content">
+    <h2>Menu</h2>
+    <p>Informasi fasilitas, santri, kegiatan harian, dll.</p>
+  </section>
+
+  <section id="sejarah" class="section-content">
+    <h2>Sejarah Pondok</h2>
+    <p>Berawal dari Gontory, Meneruskan Peradaban Islami</p>
+  </section>
+
+  <section id="kegiatan" class="section-content">
+    <h2>Kegiatan Pondok</h2>
+    <p>Kegiatan harian, tahfidz, pramuka, futsal, dan lainnya.</p>
+  </section>
+
+  <!-- Zoom Detection Script -->
+  <script>
+    function detectZoom() {
+      const zoom = window.devicePixelRatio || 1;
+      document.documentElement.style.setProperty('--zoom-level', zoom);
+    }
+    window.addEventListener('resize', detectZoom);
+    window.addEventListener('load', detectZoom);
+  </script>
+</body>
+</html>
